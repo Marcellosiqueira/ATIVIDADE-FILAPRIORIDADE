@@ -15,7 +15,7 @@ FilaPrioridade* inicializar_fila() {
 
 int fila_vazia(FilaPrioridade *fila) {
     if (fila == NULL) {
-        return 1; // Considera vazia se o ponteiro for nulo
+        return 1;
     }
     return fila->inicio == NULL;
 }
@@ -33,20 +33,15 @@ int enfileirar_prioridade(FilaPrioridade *fila, Paciente paciente) {
     novo_no->paciente = paciente;
     novo_no->proximo = NULL;
 
-    // Caso 1: Fila vazia ou nova prioridade e a mais alta
     if (fila_vazia(fila) || paciente.prioridade < fila->inicio->paciente.prioridade) {
         novo_no->proximo = fila->inicio;
         fila->inicio = novo_no;
         return 1;
     }
-
-    // Caso 2: Percorrer a fila para encontrar a posicao correta
     No *atual = fila->inicio;
     while (atual->proximo != NULL && atual->proximo->paciente.prioridade <= paciente.prioridade) {
         atual = atual->proximo;
     }
-
-    // Inserir o novo no
     novo_no->proximo = atual->proximo;
     atual->proximo = novo_no;
 
@@ -59,8 +54,8 @@ int desenfileirar_prioridade(FilaPrioridade *fila, Paciente *paciente_removido) 
     }
 
     No *no_removido = fila->inicio;
-    *paciente_removido = no_removido->paciente; // Copia os dados
-    fila->inicio = no_removido->proximo; // Atualiza o inicio da fila
+    *paciente_removido = no_removido->paciente;
+    fila->inicio = no_removido->proximo;
 
     free(no_removido);
     return 1;

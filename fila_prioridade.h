@@ -18,55 +18,18 @@ typedef struct FilaPrioridade {
     No *inicio;
 } FilaPrioridade;
 
-
-
-
-
-
-
 FilaPrioridade* inicializar_fila();
-
-
-
-
-
 
 int fila_vazia(FilaPrioridade *fila);
 
-
-
-
-
-
-
 int enfileirar_prioridade(FilaPrioridade *fila, Paciente paciente);
-
-
-
-
-
-
 
 int desenfileirar_prioridade(FilaPrioridade *fila, Paciente *paciente_removido);
 
-
-
-
-
-
-
 int consultar_frente(FilaPrioridade *fila, Paciente *paciente_consultado);
-
-
-
-
 
 void exibir_fila(FilaPrioridade *fila);
 
-
-
-
-
 void liberar_fila(FilaPrioridade *fila);
 
-#endif // FILA_PRIORIDADE_H
+#endif
