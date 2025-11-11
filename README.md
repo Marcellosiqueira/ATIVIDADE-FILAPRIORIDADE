@@ -15,24 +15,6 @@ A prioridade e definida por um sistema de cores, onde o menor numero representa 
 
 A Fila de Prioridades garante que o paciente com a prioridade mais alta seja sempre o proximo a ser atendido. Em caso de prioridades iguais, a ordem de chegada (FIFO) e mantida.
 
-## 🛠️ Instrucoes de Compilacao e Execucao
-
-### Pre-requisitos
-E necessario ter o compilador **GCC** instalado no sistema.
-
-### Compilacao
-Navegue ate o diretorio do projeto e utilize o seguinte comando para compilar a aplicacao:
-
-```bash
-gcc -o triagem main.c fila_prioridade.c
-```
-
-### Execucao
-Apos a compilacao, execute o programa com o seguinte comando:
-
-```bash
-./triagem
-```
 
 O programa apresentara um menu interativo para adicionar pacientes, chamar o proximo para atendimento, consultar o proximo e exibir a fila de espera.
 
