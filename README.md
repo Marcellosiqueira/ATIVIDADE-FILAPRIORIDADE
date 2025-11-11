@@ -1,11 +1,4 @@
 # Projeto de Estrutura de Dados: Fila de Prioridades
-
-## 👨‍💻 Integrantes
-*   [Nome do Integrante 1]
-*   [Nome do Integrante 2]
-*   [Nome do Integrante 3]
-*   [Nome do Integrante 4]
-
 ## 📚 Estrutura de Dados Implementada
 **Fila com Prioridades (Priority Queue)**
 
@@ -56,3 +49,5 @@ O projeto segue a modularizacao exigida, sendo dividido em tres arquivos princip
     *   `consultar_frente()` (Funcao de Consulta)
     *   `exibir_fila()`
     *   `liberar_fila()` (Liberacao de Memoria)
+
+(READ.ME FEITO POR IA)
