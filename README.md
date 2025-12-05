@@ -33,3 +33,5 @@ O projeto segue a modularizacao exigida, sendo dividido em tres arquivos princip
     *   `liberar_fila()` (Liberacao de Memoria)
 
 (READ.ME FEITO POR IA)
+
+(READ.ME FEITO POR IA)
